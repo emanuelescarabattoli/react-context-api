@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <Page>
-        <Header title="React Context API" />
+        <Header title="React Context API" toggleTheme={this.props.toggleTheme}/>
         <div className="grid">
           <Card title={"Pippo"}>a</Card>
           <Card title={"Pippo"}>a</Card>

@@ -12,6 +12,12 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #0088ff;
+  outline: none;
+}
+
 /* default styles */
 
 .main {
@@ -70,16 +76,19 @@ body {
 .main.light {
   background-color: #f0f0f0;
   color: #333333;
+  transition: all 200ms linear;
 }
 
 .header.light {
   background-color: #ffffff;
   border-color: #aaaaaa;
+  transition: all 200ms linear;
 }
 
 .card.light {
   background-color: #ffffff;
   border-color: #aaaaaa;
+  transition: all 200ms linear;
 }
 
 /* dark theme */
@@ -87,14 +96,17 @@ body {
 .main.dark {
   background-color: #111111;
   color: #aaaaaa;
+  transition: all 200ms linear;
 }
 
 .header.dark {
   background-color: #333333;
   border-color: #555555;
+  transition: all 200ms linear;
 }
 
 .card.dark {
   background-color: #333333;
   border-color: #555555;
+  transition: all 200ms linear;
 }

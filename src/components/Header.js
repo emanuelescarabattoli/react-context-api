@@ -12,8 +12,11 @@ class Header extends Component {
               <span>{this.props.title}</span>
               <ul>
                 <li>Home</li>
-                <li>Pippo</li>
-                <li>Pluto</li>
+                <li>
+                  <a href="#" onClick={() => this.props.toggleTheme()}>
+                    Toggle
+                  </a>
+                </li>
               </ul>
             </header>
           );
