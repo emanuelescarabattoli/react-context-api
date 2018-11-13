@@ -1,14 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: "Open Sans";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+  height: 100%;
+}
+
+/* default styles */
+
+.main {
+  margin: 0px;
+  padding: 20px;
+  height: 100%;
+}
+
+.header {
+  margin: 0px;
+  padding: 20px;
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.header span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.header ul {
+  margin: 0px 10px;
+  padding: 0px;
+  display: inline;
+  list-style-type: none;
+}
+
+.header ul li {
+  margin: 0px;
+  padding: 0px 5px;
+  display: inline;
+}
+
+.grid {
+  margin: 20px 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  margin: 0px;
+  padding: 15px;
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.card h4 {
+  margin: 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+/* light theme */
+
+.main.light {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.header.light {
+  background-color: #ffffff;
+  border-color: #aaaaaa;
+}
+
+.card.light {
+  background-color: #ffffff;
+  border-color: #aaaaaa;
+}
+
+/* dark theme */
+
+.main.dark {
+  background-color: #111111;
+  color: #aaaaaa;
+}
+
+.header.dark {
+  background-color: #333333;
+  border-color: #555555;
+}
+
+.card.dark {
+  background-color: #333333;
+  border-color: #555555;
 }
